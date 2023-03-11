@@ -19,3 +19,9 @@ let chosenLuggage = [];
 Собери новый массив на основе изначального, добавляя элементы последовательно (от меньшего индекса к большему). Выбирай определённое количество элементов из массива luggage, начиная с элемента с индексом startIndex, и добавляй их в новый массив. Он должен быть записан в переменную chosenLuggage.
 Для добавления элементов в новый массив можешь использовать команду array.push().
 */
+
+const chooseLuggage = (luggage) => {
+  return (chosenLuggage = luggage.slice(startIndex, startIndex + quantity));
+};
+
+console.log(chooseLuggage(luggage));
