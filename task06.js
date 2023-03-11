@@ -23,3 +23,11 @@ let filteredBooks = [];
 Результат запиши в переменную filteredBooks.
 Для добавления элементов в новый массив используй команду array.push().
 */
+
+const sortBooks = (books) => {
+  return (filteredBooks = books.filter(
+    (book) => book.length >= minNumber && book.length <= maxNumber
+  ));
+};
+
+console.log(sortBooks(books));
