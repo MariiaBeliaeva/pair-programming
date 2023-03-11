@@ -25,3 +25,13 @@ const chooseLuggage = (luggage) => {
 };
 
 console.log(chooseLuggage(luggage));
+
+// Решение через цикл
+// const chooseLuggage = (luggage) => {
+//   for(let i=startIndex; i < (startIndex+quantity); i++){
+//     chosenLuggage.push(luggage[i]);
+//   }
+//   return chosenLuggage;
+// }
+
+// console.log(chooseLuggage(luggage));
