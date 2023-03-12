@@ -16,17 +16,16 @@ const dishes3 = [20, 21, 15, 20, 13, 10, 29, 22, 10];
 const calories3 = 150;
 // ожидаемый максимум: 8 блюд
 
-let sum = 0;
-let iterationNum = 0;
-for (let i = 0; i < dishes.length; i++) {
-  sum = sum + dishes[i];
-  iterationNum++;
-}
-
-const getDiet = (sum, calories) => {
+const getDiet = (dishes, calories) => {
+  let sum = 0;
+  let iterationNum = 0;
+  for (let i = 0; i < dishes.length; i++) {
+    sum = sum + dishes[i];
+    iterationNum++;
+  }
   if ((sum = calories)) {
     return iterationNum - 1;
   }
 };
 
-console.log(getDiet(sum, calories));
+console.log(getDiet(dishes, calories));
